@@ -1,0 +1,4 @@
+This application is to be directly run on the server . 
+The program starts with a login page .
+Login in if you have database created in the system or else sign up.
+If table already present in the database it updates is else creates a new table 

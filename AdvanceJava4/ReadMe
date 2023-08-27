@@ -1,0 +1,6 @@
+database/schema name= "demo"
+This application starts with a login page 
+You have to enter your login credentials 
+If u are not already registered , submission of login page will take you to registration page
+After registration/login is done you will have the portal to select your preferences 
+after submitting preferences it will show the filtered results

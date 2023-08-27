@@ -1,0 +1,10 @@
+This project starts with Main class where main method is present
+Path of csv files is can be changed through AssignmentLinks
+When progrm is executed you have to your preferences and it will display the desired search result 
+Classes description : 	Main	 : main class is present 
+						Brand 	 : here values of entity is declared and fetched 
+						ReadCSV  : CSV files are fetched here and set to SQL table
+						ReadMySQL: SQL data are fetched here also contains thread that Will Look for New File Even
+								    After Program Has Ended
+						UserInput : here user input is being taken
+						AssignmentLinks : contains path variable where we can set path of the csv files   

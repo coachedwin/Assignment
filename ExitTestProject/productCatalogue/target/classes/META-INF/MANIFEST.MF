@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: shivrastogi
+Build-Jdk: 11.0.16.1
+Implementation-Title: ProductCatalogue
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.nagarro
+Implementation-URL: https://spring.io/projects/spring-boot/ProductCatalo
+ gue
+Created-By: Maven Integration for Eclipse
+

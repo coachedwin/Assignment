@@ -1,0 +1,81 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  	<servlet-name>LoginDao</servlet-name>
+  	<display-name>LoginDao</display-name>
+  	<description>A simple login</description>
+  	<servlet-class>com.nagarro.servletjsp.dao.LoginDao</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SaveProductDao</servlet-name>
+  	<display-name>SaveProductDao</display-name>
+  	<description>Product management page</description>
+  	<servlet-class>com.nagarro.servletjsp.dao.SaveProductDao</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description></description>
+  	<servlet-class>com.nagarro.servletjsp.pojo.Login</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Product</servlet-name>
+  	<display-name>Product</display-name>
+  	<description></description>
+  	<servlet-class>com.nagarro.servletjsp.pojo.Product</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>NewLoginDao</servlet-name>
+  	<display-name>NewLoginDao</display-name>
+  	<description></description>
+  	<servlet-class>com.nagarro.servletjsp.dao.NewLoginDao</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditProduct</servlet-name>
+  	<display-name>EditProduct</display-name>
+  	<description></description>
+  	<servlet-class>com.nagarro.servletjsp.dao.EditProduct</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteProductDao</servlet-name>
+  	<display-name>DeleteProductDao</display-name>
+  	<description></description>
+  	<servlet-class>com.nagarro.servletjsp.dao.DeleteProductDao</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginDao</servlet-name>
+  	<url-pattern>/LoginDaoPath</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SaveProductDao</servlet-name>
+  	<url-pattern>/ProductDaoPath</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/LoginPath</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Product</servlet-name>
+  	<url-pattern>/ProductPath</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>NewLoginDao</servlet-name>
+  	<url-pattern>/NewLoginDaoPath</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditProduct</servlet-name>
+  	<url-pattern>/EditProductPath</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteProductDao</servlet-name>
+  	<url-pattern>/DeleteProductDaoPath</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>  
+   <welcome-file>LoginModule.jsp</welcome-file>   
+  </welcome-file-list>  
+</web-app>

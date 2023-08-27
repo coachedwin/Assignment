@@ -1,0 +1,54 @@
+pipeline {
+agent any
+
+tools{
+maven "MAVEN_HOME"
+}
+
+
+
+stages {
+
+stage("Checkout code"){
+steps
+{
+
+checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '0c00168b-fa52-494e-869c-9f879291e9a0', url: 'https://git.nagarro.com/GITG00641/Java/shiv-rastogi.git']]])
+
+echo 'Check Out'
+}
+}
+stage('Clean') {
+steps {
+bat 'mvn -f AdvanceJava5/APIApplication/pom.xml clean'
+echo 'Cleaning..'
+}
+}
+stage('Compile') {
+steps {
+bat 'mvn -f AdvanceJava5/APIApplication/pom.xml compile'
+echo 'Compiling..'
+}
+}
+stage('Test') {
+steps {
+bat 'mvn -f AdvanceJava5/APIApplication/pom.xml test'
+echo 'Testing..'
+}
+}
+stage('Packaging') {
+steps {
+bat 'mvn -f AdvanceJava5/APIApplication/pom.xml package'
+echo 'Packageing..'
+}
+}
+stage('Install') {
+steps {
+bat 'mvn -f AdvanceJava5/APIApplication/pom.xml install'
+echo 'Installing..'
+}
+}
+
+
+}
+}

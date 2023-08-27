@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Student Result</h1>
+<div mat-dialog-content>
+    <span>Name: </span> <span [innerText]="this.name"></span>
+    <br>
+    <span>Roll Number : </span>
+    <span [innerText]="this.roll"></span>
+    <br>
+    <span>Score: </span>
+    <span [innerText]="this.score"></span>
+    <br><span>Date of Birth: </span> <span [innerText]="this.dob"></span>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+</div>

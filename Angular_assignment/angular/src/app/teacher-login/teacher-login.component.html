@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+    <span>Student Data</span>
+    <span class="spacer"> </span>
+    <button mat-raised-button color="accent" (click)="openDialog()"> 
+        Add Student
+      </button> &nbsp;&nbsp;
+    <button mat-raised-button color="warn" (click)="LogOut()"> 
+        LogOut
+      </button>
+
+</mat-toolbar>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Roll Number</th>
+            <th scope="col">Name</th>
+            <th scope="col">Date of Birth</th>
+            <th scope="col">Score</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let items of studentData">
+
+            <td>{{ items.roll }}</td>
+            <td>{{ items.name}}</td>
+            <td>{{ items.dob}}</td>
+            <td>{{ items.score}}</td>
+            <td>
+                <button mat-mini-fab color="accent" (click)="editData(items)">
+                <mat-icon>edit</mat-icon></button> &nbsp;&nbsp;
+                <button mat-mini-fab color="primary" (click)="deleteData(items.roll)">
+                    <mat-icon>delete</mat-icon></button>
+            </td>
+        </tr>
+    </tbody>
+</table>

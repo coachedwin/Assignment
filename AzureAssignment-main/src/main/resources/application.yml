@@ -1,0 +1,10 @@
+spring:
+  datasource:
+     url: jdbc:sqlserver://assignmentdbserver.database.windows.net:1433;database=azuredb;user=shiv_rastogi@assignmentdbserver;password=Winter!$Coming@1357;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect:  org.hibernate.dialect.SQLServer2012Dialect
+server:
+  port: 9192

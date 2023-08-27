@@ -1,0 +1,20 @@
+<!-- Default form login -->
+<form [formGroup]="loginForm" class="text-center border border-ligth p-5" style="background-color:aliceblue;">
+    <h2>Login as Student</h2>
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Enter Email</mat-label>
+        <input formControlName="email" matInput type="email" required>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Enter Password</mat-label>
+        <input formControlName="pass" matInput type="password" required>
+    </mat-form-field>
+    <br>
+    <!-- Sign in button -->
+    <button mat-raised-button color="primary" (click)="login()">Login</button>
+    <div class="alert alert-danger" *ngIf="loginFailed">Email Id or Password is Incorrect</div>
+
+</form>
+<!-- Default form login -->

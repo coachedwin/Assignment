@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+    <span>Student Data</span>
+    <span class="spacer"> </span>
+    <button mat-raised-button color="warn" (click)="LogOut()"> 
+        LogOut
+      </button>
+
+</mat-toolbar>
+<form [formGroup]="studentDetail" class="text-center border border-ligth p-5" style="background-color:aliceblue;">
+    <h2>Search Student Result</h2>
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Enter Roll Number</mat-label>
+        <input formControlName="roll" matInput type="number" required>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Enter Date of Birth</mat-label>
+        <input formControlName="dob" matInput type="date" required>
+    </mat-form-field>
+    <br>
+
+    <button mat-raised-button color="primary" type="submit" (click)="search()">Search</button>
+    <div class="alert alert-danger" *ngIf="loginFailed">No Student found with this details</div>
+
+</form>
+<!-- Default form login -->
